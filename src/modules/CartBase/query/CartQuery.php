@@ -7,7 +7,7 @@ namespace thienhungho\Cart\modules\CartBase\query;
  *
  * @see Cart
  */
-class CartQuery extends \yii\db\ActiveQuery
+class CartQuery extends \thienhungho\ActiveQuery\models\ActiveQuery
 {
     /*public function active()
     {
