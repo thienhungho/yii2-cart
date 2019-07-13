@@ -5,7 +5,7 @@
  */
 function get_current_cart()
 {
-    return \BaseApp\ecommerce\modules\CartBase\Cart::find()
+    return \thienhungho\Cart\models\Cart::find()
         ->where(['key' => get_current_cart_key()])
         ->all();
 }
@@ -15,7 +15,7 @@ function get_current_cart()
  */
 function empty_current_cart()
 {
-    \BaseApp\ecommerce\modules\CartBase\Cart::deleteAll([
+    \thienhungho\Cart\models\Cart::deleteAll([
         'key' => get_current_cart_key()
     ]);
 }

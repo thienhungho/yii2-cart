@@ -2,6 +2,7 @@
 
 namespace thienhungho\Cart\modules\CartBase\base;
 
+use thienhungho\ProductManagement\models\Product;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 
@@ -74,7 +75,7 @@ class Cart extends \yii\db\ActiveRecord
      */
     public function getProduct0()
     {
-        return $this->hasOne(thienhungho\ProductManagement\models\Product::className(), ['id' => 'product']);
+        return $this->hasOne(Product::className(), ['id' => 'product']);
     }
     
     /**
